@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container {
+    background-color: rgb(19, 175, 175);
+    color: rgb(201, 97, 57);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: move 5s;
+    animation: myanimation 0.5s;
+}
+span{
+    font-family: Nerko One;
+    font-size: 70px;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+span:hover {
+    color: rgb(255, 255, 255);
+    font-size: 95px;
+} 
+
+#w {
+    animation: fall 0.2s;
+}
+#e1 {
+    animation: fall 0.4s;
+}
+#l {
+    animation: fall 0.6s;
+}
+#c {
+    animation: fall 0.8s;
+}
+#o {
+     animation: fall 1s;
+}
+#m {
+    animation: fall 1.2s;
+}
+#e2 {
+    animation: fall 1.4s;
+}
+@keyframes fall {
+    0%{
+margin-top: -2000px;
+    }
+}
+
+@keyframes myanimation {
+    0%{
+        background-color: rgb(0, 0, 0);
+    }
+    50%{
+        background-color: rgb(209, 212, 16);
+    }
+    100%{
+        background-color: rgb(27, 161, 202);
+    }
+}
+@keyframes move {
+    0%{
+        margin-left: -1000px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+} 
